@@ -1,0 +1,40 @@
+/* Estilos específicos da página de produtos */
+.produto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.preco {
+    font-weight: bold;
+    color: #009900;
+}
+
+button {
+    background-color: #009900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #006600;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

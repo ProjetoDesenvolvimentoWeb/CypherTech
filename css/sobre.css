@@ -1,0 +1,16 @@
+/* Estilos específicos da página "Sobre" */
+.sobre {
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
