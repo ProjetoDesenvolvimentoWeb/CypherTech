@@ -18,7 +18,7 @@ function createPedido(){
 
      
     const url = 'https://127.0.0.1:8080/cyphe/produtos.php'
-    fetch(url){
-        method: 'POST'
+    fetch(url);{
+        method: 'POST';
     }
 }
