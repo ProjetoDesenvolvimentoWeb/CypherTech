@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Cypher Tech</title>
+    <link rel="stylesheet" href="css/produtos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/imagem_2024-05-11_142813930-removebg-preview.png" alt="Bootstrap" width="120" height="110">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="sobre.html">Sobre Nós</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+
+    <section class="produtos">
+        <h2>Nossos Produtos</h2>
+        <!-- Modelo de produto -->
+        <div class="produto">
+            <img src="https://ae01.alicdn.com/kf/S3ecb15043958415ea80826c490f26c4d3.jpg_640x640Q90.jpg_.webp" alt="Produto 1">
+            <h3>Cidoo-Abm081 Kit de Teclado Mecânico sem fio</h3>
+            <p>CIDOO-Tipo C Teclado Mecânico, Compact VIA Gasket Mount, Hot Swappable, Bluetooth 5.0, 2.4GHz, LEDs de frente sul, ABM098 1800</p>
+            <p class="preco">R$667,11</p>
+            <button type="button" id="teclado" onclick="addProduto()">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="https://ae01.alicdn.com/kf/Scd3004fd4fad42b78b8e8d0402ed69cbp.jpg_640x640Q90.jpg_.webp" alt="Produto 1">
+            <h3>Teclado mecânico com fio G101D</h3>
+            <p>Teclado mecânico com fio G101D, Teclado compacto do computador, Tipo C Conexão, PC Laptop Gamer, 63 Chaves</p>
+            <p class="preco">R$44,53</p>
+            <button type="button" id="mouse" onclick="addProduto()">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="https://ae01.alicdn.com/kf/S2ed610ab4d4347d686185b3835f983b0F.jpg_640x640Q90.jpg_.webp" alt="Produto 1">
+            <h3>FIFINE-RGB Gaming Headset com som surround 7.1 e microfone</h3>
+            <p>Fifine Dynamic RGB Gaming Headset com Mic Over-Earphones 7.1 Surround Sound PC PS4 PS5 3 EQ Opções Game Movie Music</p>
+            <p class="preco">R$187,65</p>
+            <button type="button" id="fone" onclick="addProduto()">Comprar</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cypher Tech</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
