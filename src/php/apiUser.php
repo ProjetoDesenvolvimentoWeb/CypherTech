@@ -12,7 +12,7 @@ $request_method = $_SERVER["REQUEST_METHOD"];
 switch($request_method) {
     case 'GET':
         // Handle GET request
-        get_clientess();
+        get_clientes();
         break;
     case 'POST':
         // Handle POST request
@@ -32,7 +32,7 @@ switch($request_method) {
         break;
 }
 
-function get_clientess() {
+function get_clientes() {
     global $mysqli;
     $query = "SELECT * FROM clientes ORDER BY id DESC";
     $result = mysqli_query($mysqli, $query);
@@ -45,6 +45,7 @@ function get_clientess() {
 
 function add_clientes() {
     global $mysqli;
+    $data = json_decode(file_get_contents("php://input"), true);
     $name = $data["name"];
     $email = $data["email"];
     $senha = $senha["senha"];
@@ -64,7 +65,7 @@ function update_clientes() {
     $name = $data["name"];
     $senha = $data["senha"];
     $email = $data["email"];
-    $query = "UPDATE clientess SET name='$name', senha='$senha', email='$email' WHERE id=$id";
+    $query = "UPDATE clientes SET name='$name', senha='$senha', email='$email' WHERE id=$id";
     if (mysqli_query($mysqli, $query)) {
         $response = array('status' => 1, 'status_message' => 'clientes Updated Successfully.');
     } else {
@@ -76,7 +77,7 @@ function update_clientes() {
 function delete_clientes() {
     global $mysqli;
     $id = intval($_GET["id"]);
-    $query = "DELETE FROM clientess WHERE id=$id";
+    $query = "DELETE FROM clientes WHERE id=$id";
     if (mysqli_query($mysqli, $query)) {
         $response = array('status' => 1, 'status_message' => 'clientes Deleted Successfully.');
     } else {
